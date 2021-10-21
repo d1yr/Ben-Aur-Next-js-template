@@ -1,0 +1,52 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["javascript", "typescript"],
+  "importSorter.generalConfiguration.sortOnBeforeSave": true,
+  "importSorter.sortConfiguration.joinImportPaths": true,
+  "importSorter.sortConfiguration.customOrderingRules.rules": [
+    {
+      "type": "importMember",
+      "regex": "^$",
+      "orderLevel": 10,
+      "disable": true
+    },
+    {
+      "regex": "^[@]/types/",
+      "orderLevel": 30
+    },
+    {
+      "regex": "^[@]/services/",
+      "orderLevel": 40
+    },
+    {
+      "regex": "^[@]/utils/",
+      "orderLevel": 50
+    },
+    {
+      "regex": "^[@]/components/",
+      "orderLevel": 60
+    },
+    {
+      "regex": "^[@]/icons/",
+      "orderLevel": 65
+    },
+    {
+      "regex": "^[@]/public/",
+      "orderLevel": 70
+    },
+    {
+      "regex": "^[@]/styles/",
+      "orderLevel": 80
+    },
+    {
+      "regex": "^[.]",
+      "orderLevel": 80
+    }
+  ]
+}
